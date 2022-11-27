@@ -17,6 +17,7 @@ const App = () => {
 
   useEffect(() => {
     setIsLoading(false);
+    document.title = "Quran App";
   }, []);
 
   return (
