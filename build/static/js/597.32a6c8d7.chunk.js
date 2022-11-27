@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkquran_app=self.webpackChunkquran_app||[]).push([[597],{3597:function(n,e,a){a.r(e);var u=a(184);e.default=function(){return(0,u.jsx)("div",{className:"no-content",children:(0,u.jsx)("h2",{children:"NO CONTENT"})})}}}]);
+//# sourceMappingURL=597.32a6c8d7.chunk.js.map

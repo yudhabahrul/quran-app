@@ -1,0 +1,42 @@
+.surah-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1.5rem;
+  height: calc(100vh - 5.53rem);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: calc(100vh - 8.53rem);
+  }
+  .bg-info {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    background: rgba(246, 246, 246, 0.75);
+    z-index: 10;
+  }
+  .display-icons {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    padding: 0.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(23, 146, 119);
+    border-radius: 50%;
+    color: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.2s;
+    @media screen and (max-width: 768px) {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+ul.favorit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  li {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2.5rem 1.7rem;
+    margin-bottom: 0.8rem;
+    .ayat {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.8rem;
+      gap: 1.5rem;
+      .no {
+        color: rgb(60, 196, 196);
+        font-weight: 600;
+      }
+      .bacaan {
+        font-size: 1.4rem;
+        text-align: right;
+      }
+    }
+    h2 {
+      color: rgb(60, 196, 196);
+      font-size: 0.75rem;
+      font-weight: 800;
+      span {
+        color: rgb(250, 180, 51);
+        cursor: pointer;
+      }
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #555;
+      margin: 1rem 0;
+      margin-bottom: 1.25rem;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      background: rgb(244, 244, 244);
+      margin-bottom: 1.5rem;
+    }
+    .icons {
+      display: flex;
+      gap: 1rem;
+      svg {
+        color: rgb(190, 188, 188);
+        font-size: 1.1rem;
+        cursor: pointer;
+        &.love {
+          color: red;
+        }
+      }
+      .copy {
+        position: relative;
+        .popup {
+          position: absolute;
+          background: #333;
+          border-radius: 6px;
+          padding: 0.4rem;
+          font-size: 0.9rem;
+          color: #fff;
+          top: 100%;
+          left: -100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.main-quran {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  @media screen and (min-width: 768px) {
+    overflow-x: hidden;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(23, 146, 119);
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    height: fit-content;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 0;
+    }
+  }
+  ul {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      grid-template-columns: 0;
+    }
+    .item {
+      display: flex;
+      background: #fff;
+      padding: 0.8rem;
+      gap: 0.9rem;
+      border-radius: 6px;
+      -webkit-user-select: none;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        min-width: 10rem;
+        height: 5rem;
+      }
+      &.border {
+        border: 1.8px solid rgb(23, 146, 119);
+      }
+      .ayat {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(23, 146, 119);
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+      .surah {
+        position: relative;
+        top: 0.07rem;
+        .name {
+          font-weight: 600;
+          color: #555;
+        }
+        .info {
+          color: rgb(151, 149, 149);
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

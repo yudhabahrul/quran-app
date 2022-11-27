@@ -1,0 +1,12 @@
+.content {
+  width: calc(100% - 4rem);
+  margin: 3.53rem 0 0 4rem;
+  padding: 2rem 2rem 0 2rem;
+  height: calc(100vh - 5.3rem);
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 4rem);
+    padding: 1rem 1rem 0 1rem;
+    padding-left: 0;
+    height: calc(100vh - 8.3rem);
+  }
+}

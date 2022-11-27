@@ -1,0 +1,36 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  background: #fff;
+  height: 100%;
+  @media screen and (max-width: 768px) {
+    width: 3rem;
+  }
+  .logo {
+    a {
+      font-size: 2rem;
+      color: #fff;
+      background: rgb(23, 146, 119);
+      display: block;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  ul {
+    margin-top: 2rem;
+    li {
+      margin-bottom: 1.8rem;
+      .link {
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+        color: rgb(190, 188, 188);
+      }
+      .active {
+        color: rgb(23, 146, 119);
+      }
+    }
+  }
+}
